@@ -7,6 +7,9 @@ namespace OpenTelemetry\Context;
 /**
  * Immutable execution scoped propagation mechanism.
  *
+ * Context immutability does not extend to the values it contains. Stored objects
+ * retain their identity and may still be modified internally.
+ *
  * @see https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/context/README.md#context
  */
 interface ContextInterface
